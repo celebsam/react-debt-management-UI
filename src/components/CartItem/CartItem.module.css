@@ -1,0 +1,77 @@
+.cartItemContainer {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-direction: column;
+  border: 1px solid #0080008a;
+  border-radius: 3px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 744px) {
+  .cartItemContainer {
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+  }
+}
+
+.cartItemContainer .leftContainer {
+  display: flex;
+  align-items: center;
+}
+.cartItemContainer .leftContainer img {
+  width: 60px;
+}
+.cartItemContainer .leftContainer h3 {
+  margin-left: 0.9rem;
+}
+
+.cartItemContainer input {
+  accent-color: green;
+  margin-right: 0.9rem;
+  cursor: pointer;
+}
+
+.cartItemContainer .amount {
+  display: flex;
+  align-items: center;
+  border: 1px solid #0080008a;
+  border-radius: 3px;
+  padding: 0.3rem 0.6rem;
+  margin-top: 0.18rem;
+}
+
+.cartItemContainer .value {
+  font-size: 0.9rem;
+}
+
+.cartItemContainer .amount span {
+  margin: 0 0.35rem;
+  font-size: 0.9rem;
+  color: rgb(94, 91, 91);
+}
+
+.cartItemContainer .amount p {
+  margin: 0 0.7rem 0 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cartItemContainer .btnContainer button:nth-child(1) {
+  color: green;
+  border: 1px solid grey;
+  padding: 0.2rem 0.4rem;
+  background: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.cartItemContainer .btnContainer button:nth-child(2) {
+  color: red;
+  border: none;
+  margin-left: 1rem;
+  cursor: pointer;
+  background: transparent;
+}

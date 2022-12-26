@@ -1,0 +1,60 @@
+.main {
+  width: 90%;
+  margin: 3rem auto;
+}
+
+.main section {
+  border: 1px solid #0080008a;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+@media (min-width: 664px) {
+  .main section {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+@media (min-width: 744px) {
+  .main section {
+    padding: 1rem 1rem 1rem 3rem;
+  }
+}
+
+.main .fees {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+.main .fees i {
+  font-size: 0.5rem;
+  color: green;
+}
+
+.main .totalBuy {
+  font-size: 0.7rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 664px) {
+  .main .totalBuy {
+    text-align: right;
+  }
+}
+
+.main .checkOut {
+  color: white;
+  background: #087908;
+  display: block;
+  margin: 2rem 0 0 auto;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+}

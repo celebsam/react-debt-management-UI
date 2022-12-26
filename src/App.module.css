@@ -1,0 +1,106 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 90%;
+  margin: 2rem auto 0;
+}
+
+.main::before {
+  content: "";
+  height: 1rem;
+  width: 40px;
+  background: grey;
+  position: absolute;
+  top: 83px;
+  left: 0;
+}
+.main::after {
+  content: "";
+  height: 1rem;
+  width: 40px;
+  background: rgb(93, 179, 93);
+  position: absolute;
+  top: 83px;
+  right: 0;
+}
+
+@media (min-width: 1100px) {
+  .main {
+    grid-template-columns: 1fr 2fr;
+    gap: 0;
+  }
+}
+
+.main .textContainer {
+  padding-top: 0;
+}
+@media (min-width: 1100px) {
+  .main .textContainer {
+    padding-top: 3rem;
+  }
+}
+
+.main .textContainer h1 {
+  font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.main .textContainer p {
+  padding: 0.4rem 0 2rem;
+}
+.main .textContainer .started {
+  padding: 0.6rem 1.2rem;
+  background: green;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
+
+.main .btnContainer {
+  display: flex;
+}
+
+.main .btnContainer .video,
+.main .btnContainer .started {
+  display: flex;
+  align-items: center;
+}
+
+.main .textContainer .video {
+  background: transparent;
+  border: none;
+  margin-left: 0.8rem;
+}
+
+.main .imageContainer {
+  position: relative;
+}
+
+.main .imageContainer img {
+  z-index: 100;
+  width: 100%;
+}
+
+.main .imageContainer .box {
+  background-image: url("./images/IMG-20221221-WA0001-removebg-preview.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: 39%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.main .imageContainer .popup {
+  position: absolute;
+  width: 184px;
+  top: 35%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+}

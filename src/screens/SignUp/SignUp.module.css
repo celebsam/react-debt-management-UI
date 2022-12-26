@@ -1,0 +1,81 @@
+.main {
+  width: 90%;
+  margin: auto;
+}
+
+.main .leftCoatOfArm {
+  width: 150px;
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+.main .rightCoatOfArm {
+  width: 150px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+
+@media (min-width: 700px) {
+  .main {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .main {
+    width: 30%;
+  }
+}
+
+.main h1,
+.main p {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.main label {
+  display: block;
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.main .textField input {
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  outline: none;
+  border: 1px solid green;
+  border-radius: 2px;
+}
+
+.main form div {
+  margin-bottom: 1.2rem;
+}
+.main .checkBox {
+  display: flex;
+}
+
+.main .checkBox input {
+  accent-color: green;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+.main .checkBox span {
+  text-decoration: underline;
+  color: green;
+  cursor: pointer;
+}
+
+.main form button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 0.7rem 0;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.main form button:hover {
+  transform: scale(1.02);
+}

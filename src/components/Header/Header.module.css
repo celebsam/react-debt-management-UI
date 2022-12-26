@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.header img {
+  margin-top: 12px;
+  width: 100%;
+  height: 60px;
+}
+
+.header ul {
+  display: none;
+  flex: 1;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .header ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.header ul li {
+  list-style: none;
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+.header ul li:hover {
+  color: green;
+}
+
+.header .login {
+  border: 1px solid green;
+  padding: 0.55rem 1.2rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.header .signUp {
+  background: black;
+  color: white;
+  padding: 0.55rem 0.9rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.header .signUp:hover {
+  color: rgb(223, 216, 216);
+}
+
+.header .cart {
+  position: relative;
+}
+.header .cart small {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  font-size: 0.5rem;
+  background: red;
+  padding: 0.1rem 0.27rem;
+  border-radius: 50%;
+  color: white;
+}
+
+.header .hamburger {
+  display: block;
+}
+@media (min-width: 1000px) {
+  .header .hamburger {
+    display: none;
+  }
+}

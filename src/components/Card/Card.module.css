@@ -1,0 +1,59 @@
+.cardContainer {
+  border: 1px solid green;
+  width: 96%;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 7px;
+}
+
+.cardContainer .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardContainer .logo p {
+  background: rgba(106, 238, 106, 0.726);
+  color: grey;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 7px;
+}
+.cardContainer .heading {
+  text-align: center;
+  margin: 1rem 0;
+}
+.cardContainer .heading p {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+
+.cardContainer ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  font-size: 0.85rem;
+  user-select: none;
+}
+
+.cardContainer ul li p:nth-child(2) {
+  font-weight: bold;
+}
+
+.cardContainer .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainer .footer button {
+  color: white;
+  background: #087908;
+  margin-right: 1rem;
+  border: none;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
