@@ -1,17 +1,25 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./Header.module.css";
-import Logo from "../../images/LOGO.png";
+import Logo from "../../images/Coat_of_arms_of_Nigeria.svg.png";
 import { FiShoppingCart, FiUser } from "react-icons/fi";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { BsArrowLeftShort } from "react-icons/bs";
+import styles from "./SideMenu.module.css";
 
-const Header = ({ signup, cart, bondOffer, sideMenuHandler }) => {
+const SideMenu = ({ bondOffer, cart, signup, showMenu, sideMenuHandler }) => {
   return (
-    <header className={styles.header}>
-      <nav>
+    <div
+      className={`${styles.sideMenuContainer} ${
+        showMenu ? styles.active : null
+      }`}
+    >
+      <div className={styles.logo}>
         <Link to="/">
           <img src={Logo} alt="debt management office nigeria" />
         </Link>
-      </nav>
+        <span onClick={sideMenuHandler} style={{ cursor: "pointer" }}>
+          <BsArrowLeftShort color="#fff" size="2.2em" />
+        </span>
+      </div>
       <ul>
         <li
           style={bondOffer ? { fontWeight: "bold" } : { fontWeight: "unset" }}
@@ -40,11 +48,8 @@ const Header = ({ signup, cart, bondOffer, sideMenuHandler }) => {
           <small>2</small>
         </li>
       </ul>
-      <div className={styles.hamburger} onClick={sideMenuHandler}>
-        <GiHamburgerMenu size="1.5em" />
-      </div>
-    </header>
+    </div>
   );
 };
 
-export default Header;
+export default SideMenu;

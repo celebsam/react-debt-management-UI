@@ -1,14 +1,14 @@
 import styles from "./App.module.css";
-import Header from "./components/Header/Header";
 import mobilePhone from "./images/Component 3.png";
 import popup from "./images/phone popup.PNG";
 import { BsArrowRightShort } from "react-icons/bs";
 import { BsPlayCircle } from "react-icons/bs";
+import Layout from "./components/Layout/Layout";
 
 const Home = () => {
   return (
     <>
-      <Header />
+      <Layout />
       <main className={styles.main}>
         <div className={styles.textContainer}>
           <h1>Subscribe to FGN Saving Bond</h1>

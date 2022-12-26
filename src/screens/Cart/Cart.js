@@ -1,12 +1,12 @@
 import styles from "./Cart.module.css";
-import Header from "../../components/Header/Header";
 import CartItem from "../../components/CartItem/CartItem";
 import { BiChevronDown } from "react-icons/bi";
+import Layout from "../../components/Layout/Layout";
 
 const Cart = () => {
   return (
     <>
-      <Header cart />
+      <Layout cart />
       <main className={styles.main}>
         <CartItem />
         <CartItem />

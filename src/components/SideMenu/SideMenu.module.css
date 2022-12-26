@@ -1,0 +1,79 @@
+.sideMenuContainer {
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+  background: green;
+  z-index: 10000;
+  padding: 2rem;
+  transform: translateX(-350px);
+  transition: all 0.3s ease;
+}
+
+.sideMenuContainer.active {
+  transform: translateX(0px);
+}
+
+.sideMenuContainer .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sideMenuContainer .logo img {
+  width: 70px;
+}
+
+.sideMenuContainer ul {
+  flex: 1;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.sideMenuContainer ul li {
+  list-style: none;
+  margin: 1.9rem 0;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  color: white;
+  width: max-content;
+}
+.sideMenuContainer ul li:hover {
+  color: green;
+}
+
+.sideMenuContainer .login {
+  border: 1px solid white;
+  background: green;
+  padding: 0.55rem 0.9rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.sideMenuContainer .signUp {
+  background: black;
+  color: white;
+  padding: 0.55rem 0.9rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.sideMenuContainer .signUp:hover {
+  color: rgb(223, 216, 216);
+}
+
+.sideMenuContainer .cart {
+  position: relative;
+}
+.sideMenuContainer .cart small {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  font-size: 0.5rem;
+  background: red;
+  padding: 0.1rem 0.27rem;
+  border-radius: 50%;
+  color: white;
+}
+
+.sideMenuContainer .hamburger {
+  display: block;
+}

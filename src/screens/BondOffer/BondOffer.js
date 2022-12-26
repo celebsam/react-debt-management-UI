@@ -1,8 +1,8 @@
 import styles from "./BondOffer.module.css";
-import Header from "../../components/Header/Header";
 import Card from "../../components/Card/Card";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import Layout from "../../components/Layout/Layout";
 
 const responsive = {
   0: { items: 1 },
@@ -13,7 +13,7 @@ const responsive = {
 const BondOffer = () => {
   return (
     <>
-      <Header bondOffer />
+      <Layout bondOffer />
       <main className={styles.main}>
         <AliceCarousel
           mouseTracking

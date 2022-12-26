@@ -98,7 +98,7 @@
 
 .main .imageContainer .popup {
   position: absolute;
-  width: 184px;
+  width: clamp(100px, 10vw, 184px);
   top: 35%;
   left: 57%;
   transform: translate(-50%, -50%);

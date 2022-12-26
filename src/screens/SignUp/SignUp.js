@@ -1,12 +1,12 @@
 import styles from "./SignUp.module.css";
-import Header from "../../components/Header/Header";
 import leftImg from "../../images/image 1.png";
 import rightImg from "../../images/image 2.png";
+import Layout from "../../components/Layout/Layout";
 
 const SignUp = () => {
   return (
     <>
-      <Header signup />
+      <Layout signup />
       <main className={styles.main}>
         <h1>Sign Up</h1>
         <p>Stop spending, Start Investing</p>
