@@ -37,9 +37,6 @@
   color: white;
   width: max-content;
 }
-.sideMenuContainer ul li:hover {
-  color: green;
-}
 
 .sideMenuContainer .login {
   border: 1px solid white;
